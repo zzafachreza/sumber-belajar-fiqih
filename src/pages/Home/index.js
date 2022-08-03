@@ -61,7 +61,7 @@ export default function Home({ navigation }) {
           flex: 1,
           height: 80,
         }}>
-          <Text style={styles.txt}>Selamt datang,{user.nama_lengkap}</Text>
+          <Text style={styles.txt}>Selamat datang,{user.nama_lengkap}</Text>
           <Text style={styles.txtLogo}>SUMBER BELAJAR FIQIH</Text>
           <Text style={styles.txt}>KELAS X</Text>
         </View>

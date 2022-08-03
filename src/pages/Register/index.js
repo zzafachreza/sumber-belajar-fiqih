@@ -66,7 +66,7 @@ export default function Register({ navigation }) {
             });
         } else if (data.username.length === 0) {
             showMessage({
-                message: 'Maaf username masih kosong !',
+                message: 'Maaf nis masih kosong !',
             });
         } else if (data.nama_lengkap.length === 0) {
             showMessage({
@@ -75,11 +75,11 @@ export default function Register({ navigation }) {
         }
         else if (data.telepon.length === 0) {
             showMessage({
-                message: 'Maaf nama kucing masih kosong !',
+                message: 'Maaf nama telepon masih kosong !',
             });
         } else if (data.alamat.length === 0) {
             showMessage({
-                message: 'Maaf nama kucing masih kosong !',
+                message: 'Maaf nama kelas masih kosong !',
             });
         } else if (data.password.length === 0) {
             showMessage({
@@ -132,9 +132,9 @@ export default function Register({ navigation }) {
                 <MyGap jarak={10} />
                 <MyInput
 
-                    label="Username"
-                    iconname="person"
-                    placeholder="masukan username"
+                    label="NIS"
+                    iconname="card"
+                    placeholder="masukan nis"
                     value={data.username}
                     onChangeText={value =>
                         setData({
@@ -159,6 +159,20 @@ export default function Register({ navigation }) {
                         })
                     }
                 />
+                <MyGap jarak={10} />
+                <MyInput
+
+                    label="Kelas"
+                    placeholder="masukan kelas"
+                    iconname="home"
+                    value={data.alamat}
+                    onChangeText={value =>
+                        setData({
+                            ...data,
+                            alamat: value,
+                        })
+                    }
+                />
 
                 <MyGap jarak={10} />
                 <MyInput
@@ -175,20 +189,7 @@ export default function Register({ navigation }) {
                         })
                     }
                 />
-                <MyGap jarak={10} />
-                <MyInput
 
-                    label="Alamat"
-                    placeholder="masukan alamat lengkap"
-                    iconname="home"
-                    value={data.alamat}
-                    onChangeText={value =>
-                        setData({
-                            ...data,
-                            alamat: value,
-                        })
-                    }
-                />
 
                 <MyGap jarak={10} />
                 <MyInput

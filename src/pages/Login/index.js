@@ -20,9 +20,9 @@ export default function ({ navigation }) {
 
 
     if (kirim.username == null && kirim.password == null) {
-      alert('username dan Passwoord tidak boleh kosong !');
+      alert('nis dan Passwoord tidak boleh kosong !');
     } else if (kirim.username == null) {
-      alert('username tidak boleh kosong !');
+      alert('nis tidak boleh kosong !');
     } else if (kirim.password == null) {
       alert('Passwoord tidak boleh kosong !');
     } else {
@@ -81,13 +81,13 @@ export default function ({ navigation }) {
       </View>
       <MyGap jarak={10} />
       <View style={{ padding: 10, marginVertical: 10, flex: 1 }}>
-        <MyInput label="Username" onChangeText={val => setKirim({
+        <MyInput label="NIS" onChangeText={val => setKirim({
           ...kirim,
           username: val
         })}
 
 
-          iconname="person" placeholder="Masukan username" />
+          iconname="card" placeholder="Masukan nis" />
         <MyGap jarak={20} />
         <MyInput
           onChangeText={val => setKirim({
